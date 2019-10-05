@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>태극기</title>
+	 <link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR&display=swap" rel="stylesheet">
+	
+
+	<style type="text/css">
+		  * {margin:0;
+        	padding:0;}
+		body{margin:0;
+		font-family: 'Noto Serif KR', serif;}
+
+
+	#monitor{position: fixed;
+		background:black;
+		width: 100px;
+		height: 100px;
+		right: 0px;
+		top:0px;
+		color: white;
+		z-index: 9;}
+
+		#nav{position: relative;
+			height: 50px;
+			border-bottom: 1px solid black; }
+		#logo{position: absolute;
+			transform:translate(0,-50%);
+			top:50%;
+			left: 5%;
+			font-size: 25px;}
+
+/* 애국가 */
+		#sing #p1{position: absolute;
+			writing-mode: vertical-rl;
+			opacity: 0;
+			color: #cbcbcb;
+			z-index: 5;
+			top:100px;
+			right: 100px;}
+
+		#sing #p2{position: absolute;
+			writing-mode: vertical-rl;
+			opacity: 0;
+			color: #cbcbcb;
+			height: 1800px;
+			z-index: 5;
+			top:800px;
+			left: 100px;}
+
+		#sing #p3{position: absolute;
+			writing-mode: vertical-rl;
+			opacity: 0;
+			color: #cbcbcb;
+			height: 1800px;
+			z-index: 5;
+			top:1120px;
+			right: 100px;}
+
+		#sing #p4{position: absolute;
+			writing-mode: vertical-rl;
+			opacity: 0;
+			color: #cbcbcb;
+			height: 550px;
+			z-index: 5;
+			top:1930px;
+			left: 100px;}
+
+		#sing #p5{position: absolute;
+			writing-mode: vertical-rl;
+			opacity: 0;
+			color: #cbcbcb;
+			height: 450px;
+			z-index: 5;
+			top:2500px;
+			right: 100px;}
+
+/* sections */
+		section {height: 500px;
+			position: relative;}
+
+		body .SF{background-image:url(태극기기.jpg);
+			background-size: cover;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			z-index: -3;}
+
+
+		body #section1 #f1
+			{position: absolute;
+			transform:translate(0,-50%);
+			font-size: 78px;
+			top:40%;
+			left: 5%;}
+		body #section1 #f2
+			{position: absolute;
+			transform:translate(0,-20%);
+			opacity: 0;
+			font-size: 30px;
+			line-height: 1.5;
+			top:35%;
+			left:55%;}
+				
+		body #section2 #flag{
+			position: absolute;
+			opacity: 0;
+			font-size: 150px;
+			transform:translate(-50%,-50%);
+			top:50%;
+			left: 50%;
+			background-color: black;
+			color:white;
+			text-shadow: 3px 2px #CD313A, 4px 5px #0047A0;}
+
+		body #section3 #flagW1
+			{position: absolute;
+			transform:translate(-50%,-50%);
+			opacity: 0;
+			left: 50%;
+			font-size: 80px;}
+		body #section3 #flagW2
+			{position: absolute;
+			transform:translate(-50%,-50%); 
+			opacity: 0;
+			top:50%;
+			left: 50%;
+			font-size: 1.5em;}
+
+
+		body #section4{background-image: url(배경색.jpg);
+			background-size: cover;
+			background-attachment: fixed;
+			background-repeat: no-repeat;}
+		body #section4 #flagcir1
+			{position: absolute;
+			opacity: 0;
+			top:30%;
+			left:  5%;
+			font-size: 80px;}
+		body #section4 #flagcir2
+			{position: absolute;
+			opacity: 0;
+			top:35%;
+			left: 30%;
+			font-size: 1.5em;}
+	
+
+		#section5{background-color: black;
+			color:white;}
+		body #section5 #flagsq1
+			{position: absolute;
+			transform:translate(-50%,-50%);
+			opacity: 0;
+			top:20%;
+			left: 50%;
+			font-size: 80px;}
+		body #section5 #flagsq2
+			{position: absolute;
+			transform:translate(-50%,-50%);
+			opacity: 0;
+			top:65%;
+			left: 50%;
+			font-size: 1.5em;}
+
+		body #section5 #mtext{
+			position: absolute;
+			background-color: black;
+			display: none;
+			color:white;
+			font-size: 150px;
+			transform:translate(-50%,-50%);
+			top:45%;
+			left: 50%; 
+			text-shadow: 3px 2px #CD313A, 4px 5px #0047A0;
+			z-index: 10;}
+
+		body #section6 #htt
+			{position: absolute;
+			transform:translate(-50%, -50%);
+			text-align:center;
+			font-size: 0.7em;
+			left: 50%;
+			bottom: 10%;}
+
+	
+
+/* 키프레임 */
+			@keyframes a{from{left: 0;}to{left: 5%; opacity:1;}}
+			@keyframes b{from{top: 0;}to{top: 35%; opacity:1;}}
+			@keyframes c{from{opacity:0;}to{opacity:1;}}
+			@keyframes d{from{opacity:1;}to{opacity:0;}}
+	</style>
+</head>
+<body>
+
+	<div id="nav">
+		<div id="logo">
+			태극기
+		</div>
+	</div>
+
+	<div id="sing">
+		<p id="p1">
+			동해물과 백두산이 마르고 닳도록
+			하느님이 보우하사 우리나라 만세
+		</p>
+		<p id="p2">
+			남산 위에 저 소나무 철갑을 두른 듯
+			바람 서리 불변함은 우리 기상일세
+		</p>
+		<p id="p3">
+			가을 하늘 공활한데 높고 구름 없이
+			밝은 달은 우리 가슴 일편단심일세
+		</p>
+		<p id="p4">
+			이 기상과 이 맘으로 충성을 다하여
+			괴로우나 즐거우나 나라 사랑하세
+		</p>
+		<p id="p5">
+			무궁화 삼천리 화려 강산
+			대한 사람 대한으로 길이 보전하세
+		</p>
+
+	</div>
+
+	<section id="section1">
+		<div id="f1" class="f">
+		국기에 대한 맹세
+		</div>
+	
+		<div id="f2" class="f">
+			나는 자랑스러운 태극기 앞에 <br> 
+			자유롭고 정의로운 대한민국의<br>
+			무궁한 영광을 위하여<br>
+			충성을 다할 것을 굳게 다짐합니다<br>
+		</div>
+	</section>
+
+
+	<section id="section2" class="SF">
+		<div id="flag" >
+			太 極 旗
+		</div>
+	</section>
+
+
+	<section id="section3">
+		<div id="flagW1">
+			흰색바탕
+		</div>
+		<div id="flagW2">
+			: 밝음과 순수, 전통적으로 평화를 사랑하는 우리의 민족성을 나타냅니다
+		</div>
+	</section>
+
+
+	<section id="section4">
+		<div id="flagcir1">
+			태극
+		</div>
+		<div id="flagcir2">
+			: 태극 문양은 음(파랑)과 양(빨강)의 조화를 상징하는 것으로<br>
+			우주 만물이 음양의 조화로 인해 생명을 얻고 발전한다는 대자연의 진리를 표현해낸 것입니다<br>
+		</div>
+	</section>
+
+
+	<section id="section5">
+		<div id= "mtext">
+		大 韓 民 國
+		</div>
+		<div id="flagsq1">
+			사괘
+		</div>
+		<div id="flagsq2">
+			건 : 하늘, 봄, 동쪽 <br><br>
+			곤 : 땅, 여름, 서쪽 <br><br>
+			감 : 물, 겨울, 북쪽 <br><br>
+			리 : 불, 가을, 남쪽 <br><br>
+		</div>
+	</section>
+
+
+	<section id="section6" class="SF">
+		<div id="htt">
+			<p>
+			: https://www.mois.go.kr/chd/sub/a05/birth/screen.do<br>
+			: https://ko.wikipedia.org
+			</p>
+		</div>
+	</section>
+
+	<audio id="sound"> <source src="soundd.mp3" type="mp3" ></audio>
+
+
+	
+</body>
+
+	<script type="text/javascript">
+		window.onscroll = function(){
+			var t = document.documentElement.scrollTop + document.body.scrollTop;console.log(t);
+				
+
+		if(t > 0){
+			p1.style.animation = "c 4s forwards";}
+		
+		if(t > 10){
+			f2.style.animation = "b 1s forwards"; 
+			sound.play();}
+			else{ f2.style.animation = "d 2s forwards";}
+
+	
+		if(t > 150){
+			flag.style.animation = "c 1s forwards";}
+			else{ flag.style.animation = "d 2s forwards";}
+
+		if(t > 400){
+			p2.style.animation = "c 4s forwards";}
+			else{ p2.style.animation = "d 2s forwards";}
+
+		if(t > 600){
+			flagW1.style.animation = "b 1s forwards";
+			flagW2.style.animation = "c 3s forwards";}
+			else{ flagW1.style.animation = "";
+					flagW2.style.animation = "";}
+
+		if(t > 800){
+			p3.style.animation = "c 4s forwards";}
+			else{ p3.style.animation = "d 2s forwards";}
+
+		if(t > 1000){
+			flagcir1.style.animation = "a 3s forwards";
+			flagcir2.style.animation = "c 4s forwards";}
+			else{ flagcir1.style.animation = "";
+					flagcir2.style.animation = "";}
+
+		if(t > 1500){
+			p4.style.animation = "c 4s forwards";}
+			else{ p4.style.animation = "d 2s forwards";}
+
+		if(t > 1700){
+			flagsq1.style.animation = "c 3s forwards";
+			flagsq2.style.animation = "c 4s forwards";}
+			else{ flagsq1.style.animation = "";
+					flagsq2.style.animation = "";}
+
+		if(t > 2090){
+			flagsq1.style.display = "none";
+			flagsq2.style.display = "none";
+			mtext.style.display = "block";}
+			else{ flagsq1.style.display = "block";
+			flagsq2.style.display = "block";
+			mtext.style.display = "none"}
+				
+
+		if(t > 2200){
+			p5.style.animation = "c 4s forwards";}
+			else{ p5.style.animation = "d 2s forwards";}
+
+
+
+		}
+
+	</script>
+</html>
